@@ -1,0 +1,223 @@
+@import url(https://fonts.googleapis.com/css?family=Monoton|Viga|Montserrat+Subrayada:400,700|Didact+Gothic|Advent+Pro:400,300,700,200);
+/*FAMILIES*/
+
+
+/*font-family: 'Monoton', cursive;
+
+font-family: 'Viga', sans-serif;
+
+font-family: 'Montserrat Subrayada', sans-serif;
+
+font-family: 'Didact Gothic', sans-serif;
+
+font-family: 'Advent Pro', sans-serif;*/
+
+/*FAMILIES*/
+
+h1 {
+	font-family: 'Monoton', cursive;
+	font-size: 10vw;
+	font-weight: 400;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+h2 {
+	line-height: 1;
+	font-family: 'Advent Pro', sans-serif;
+	font-weight: bold;
+	font-size: 3vw;
+	color: #fff;
+	padding-top: 1em;
+	padding-bottom: .5px;
+	margin-top: 0;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	background-color: black;
+}
+h3 {
+	display: block;
+	text-align: left;
+	font-family: 'Viga', sans-serif;
+	font-weight: normal;
+	font-size: 28pt
+	color: #fff;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+h4 {
+	font-family: 'Advent Pro', sans-serif;
+	font-weight: 200;
+	font-size: 15pt;
+	margin: 0;
+}
+li {
+	font-family: 'Didact Gothic', sans-serif;
+	font-weight: 300;
+	font-size: 12pt;
+	text-transform: uppercase;
+}
+p {
+	font-family: 'Didact Gothic', sans-serif;;
+	font-weight: normal;
+	font-size: 12pt;
+	color: #fff;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+nav {
+	padding: 5px;
+	text-align: center;
+	font-family: 'Advent Pro', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-color: white;
+	border-style:  double;
+	border-width: 5px 0px 5px 0px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: black;
+	font-size: 30pt;
+	width: 60%;
+}
+ul {
+	list-style-type: none;
+	text-align: left;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	padding-top: 20px;
+	margin-bottom: 0;
+	margin-top: 10px;
+}
+body {
+	display: block;
+	background-color: black;
+	width: 100%;
+}
+img {
+	width: 20%;
+}
+div {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+a:link {
+	text-decoration: none;
+	color: #fff;
+}
+a:visited {
+	text-decoration: none;
+	color: #fff;
+}
+a:active {
+	text-decoration: none;
+	color: #fff;
+}
+a:hover {
+	text-decoration: underline;
+	color: #fff;
+}
+div.labels ul {
+	padding: 0;
+}
+.bio {
+	padding: 0;
+	padding-top: 0px;
+	width: 60%;
+	margin-bottom: 0px;
+	text-align: left;
+}
+.labels {
+	padding-top: 0px;
+	width: 20%;
+	margin-bottom: 0px;
+	text-align: left;
+	margin-right: 50%;
+	margin-left: 20%;
+}
+.box1 {
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: 0;
+	margin-bottom: 2em;
+	background-color: black;
+	color: #fff;
+	border-style: double;
+	border-width: 5px 0px 0px 0px;
+	border-color: #fff;
+}
+.box2 {
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: 0;
+	margin-bottom: 2em;
+	background-color: black;
+	color: #fff;
+	border-style: double;
+	border-width: 5px 0px 0px 0px;
+	border-color: #fff;
+}
+.aboutme {
+	display: block;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: 0;
+	padding-right: 5px;
+	padding-top: 10px;
+	background-color: black;
+	color: #fff;
+	border-style: double;
+	border-width: 5px 0px 0px 0px;
+	border-color: #fff;
+	text-align: left;
+}
+.title {
+	display: block;
+	text-align: center;
+	width: 60%;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: white;
+	background-color: black;
+.nav {
+	display: block;
+	width: 60%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border: none;
+}
+.bottomnav {
+	display: block;
+	width: 60%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+.left {
+	text-align: left;
+	display: block;
+	margin-bottom: 0;
+}
+.right {
+	text-align: right;
+	display: block;
+	margin-bottom: 0;
+}
+.image {
+	display: inline-block;
+	float: right;
+	margin-right: 20%;
+	margin-left: 50%;
+	width: 50%;
+}
