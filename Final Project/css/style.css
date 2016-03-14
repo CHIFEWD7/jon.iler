@@ -1,0 +1,264 @@
+/*FONT IMPORTS*/
+
+@import url(https://fonts.googleapis.com/css?family=Hind+Vadodara:400,700,300);
+
+@import url(https://fonts.googleapis.com/css?family=Glegoo:400,700);
+
+@font-face {
+  font-family: 'Akzidenz Grotesk BE Md'; 
+  src:  url('../fonts/AkzidenzGroteskBE-Md.otf');
+}
+
+/*FONT IMPORTS*/
+
+/*FONT CODES
+
+font-family: 'Signika', sans-serif;
+
+font-family: 'Glegoo', serif;
+
+FONT CODES*/
+
+/** {
+	border: 1px solid black;
+}*/
+
+html {
+	box-sizing: border-box;
+}
+
+
+/*NAV*/
+
+nav {
+	text-align: center;
+	padding: 2%;
+	display: block;
+	font-family: 'Akzidenz Grotesk BE Md', sans-serif;
+	display: inline;
+	text-align: center;
+	margin: 1%;
+}
+
+#header img {
+	display: inline-block;
+	width: 7%;
+	padding: 2%;
+}
+
+
+#toggle img {
+	display: block;
+	float: right;
+	width: 3%;
+	padding: 2%;
+}
+
+.nav-collapse, .nav-collapse-0, .opened {
+	display: block;
+	margin: 0;
+	margin-right: 0;
+	padding: 0;
+}
+
+.nav-collapse a {
+	text-transform: lowercase;
+	text-decoration: none;
+	color: white;
+	font-size: 24pt;
+	display: inline-block;
+	margin: 0 auto;
+	padding: 2%;
+}
+
+.nav-collapse {
+	background-color: #333;
+	border-color: black;
+	border-style: solid;
+	border-width: 0 0 1px 0;
+}
+
+/*NAV*/
+
+/* STRUCTURE */
+
+body { 
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+	line-height: 1;
+	margin: 0;
+	font-family: 'Hind Vadodara', sans-serif;	
+	font-size: 20pt;
+	text-transform: uppercase;
+	border: 0;
+	border-bottom: 3px;
+	border-color: #BC00FF;
+	border-style: solid;
+	padding-bottom: 2px;
+}
+
+h3 {
+	line-height: 1;
+	margin: 0;
+	font-family: 'Hind Vadodara', sans-serif;	
+	font-size: 18pt;
+	font-weight: 400;
+}
+
+p {
+	font-family: 'Glegoo', serif;
+	font-size: 1em;
+}
+
+#pagewrap {
+	padding: 0;
+	margin: 0;
+}
+#header {
+	display: block;
+	padding: 0;
+	width:100%;
+	border-color: black;
+	border-style: solid;
+	border-width: 0 0 1px 0;
+}
+#header div img {
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: top;
+	float: right;
+	width: 7%;
+	transition-property: width;
+	transition-duration: 1s;
+	transition-timing-function: ease-in;
+}
+
+#content {
+	background: #FFF;
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: : 5%;
+	padding: 0;
+}
+
+#top {
+	display: block;
+	margin: 0;
+	padding: 0;
+	background-color: #333;
+	width: 100%;
+}
+
+#innerbox1 {
+	clear: both;
+	float: left;
+	margin: 0;
+	display: block;
+	width: 45%;
+	padding: 2.5%;
+}
+#innerbox2 {
+	display: inline-block;
+	float: left;
+	width: 45%;
+	padding: 2.5%;
+}
+
+#innerbox2 ul {
+	padding-left: 0;
+	color: #231F20;
+}
+
+#innerbox2 li {
+	display: block;
+	text-decoration: none;
+	color: #231F20;
+}
+#innerbox2 li a {
+	display: block;
+	text-decoration: none;
+	color: #231F20;
+}
+#innerbox2 li:hover {
+	text-decoration: underline;
+}
+#innerbox3 {
+	clear: both;
+	width: 95%;
+	margin-bottom: 2.5%;
+	padding: 2.5%;
+}
+#innerbox3 li {
+	text-decoration: none;
+	display: inline-block;
+	padding: 2.5%;
+}
+#innerbox3 ul {
+	width: 100%;
+	margin: 2.5% auto;
+	text-align: center;
+	padding-left: 0;
+}
+
+#sidebar {
+	background: #FFF;
+}
+	header, #content, #middle, #sidebar {
+}
+
+/*#content, #middle, #sidebar, footer {
+	border: solid 3px black;
+	margin-top: 2%;
+}*/
+
+#content, #middle, #sidebar, li {
+	font-family: 'Glegoo', serif;
+}
+
+footer {
+	background-color: #333;
+	clear: both;
+	padding: 0;
+	margin: 0;
+}
+
+footer ul {
+	padding: 2%;
+	display: block;
+	margin: 0;
+}
+
+footer li img {
+	display: inline-block;
+	padding: 2%;
+	width: 50%;
+}
+footer li {
+	text-align: center;
+	display: inline-block;
+}
+
+.toggle {
+	float: left;
+}
+
+.grow:hover {
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+    -webkit-transition-timing-function: linear; /* Safari and Chrome */
+    transition-timing-function: linear;
+}
+
+/*
+	-webkit-box-shadow: 0 7px 6px -6px black;
+	-moz-box-shadow: 0 7px 6px -6px black;
+	box-shadow: 0 7px 6px -6px black;*/
