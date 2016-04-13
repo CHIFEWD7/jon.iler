@@ -5,7 +5,7 @@
 @import url(https://fonts.googleapis.com/css?family=Glegoo:400,700);
 
 @font-face {
-  font-family: 'Akzidenz Grotesk BE Md'; 
+  font-family: 'Akzidenz Grotesk BE Md';
   src:  url('../fonts/AkzidenzGroteskBE-Md.otf');
 }
 
@@ -25,64 +25,90 @@ FONT CODES*/
 
 html {
 	box-sizing: border-box;
+	font-size: 12pt;
 }
 
 
 /*NAV*/
 
-nav {
-	text-align: center;
-	padding: 2%;
-	display: block;
-	font-family: 'Akzidenz Grotesk BE Md', sans-serif;
-	display: inline;
-	text-align: center;
-	margin: 1%;
-}
-
-#header img {
-	display: inline-block;
-	width: 7%;
-	padding: 2%;
-}
-
-
-#toggle img {
-	display: block;
-	float: right;
-	width: 3%;
-	padding: 2%;
-}
-
-.nav-collapse, .nav-collapse-0, .opened {
+#header {
 	display: block;
 	margin: 0;
-	margin-right: 0;
-	padding: 0;
+	padding: 0px;
+  	box-shadow: 3px 3px 5px black;
 }
-
-.nav-collapse a {
-	text-transform: lowercase;
-	text-decoration: none;
+nav {
+	float: left;
+	display: block;
+	padding: 10px;
+	height: 100px;
+	width: 100%;
+	text-align: center;
+	background-color: #222;
 	color: white;
-	font-size: 24pt;
-	display: inline-block;
-	margin: 0 auto;
-	padding: 2%;
+	overflow: hidden;
+	z-index: 30;
 }
 
-.nav-collapse {
-	background-color: #333;
-	border-color: black;
-	border-style: solid;
-	border-width: 0 0 1px 0;
+a span {
+	color: #BC00FF;
+}
+
+.navlinks {
+	display: inline-block;
+	font-family: 'Akzidenz Grotesk BE Md';
+	text-transform: lowercase;
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+	padding: 0;
+	margin: 0 auto;
+}
+
+.firstletter {
+  	float: left;
+  	color: black;
+  	font-size: 4rem;
+  	line-height: 40px;
+  	padding-top: 0;
+  	padding-right: 8px;
+  	padding-left: 3px;
+  	font-family: 'Akzidenz Grotesk BE Md', sans-serif;
+}
+.linkstyle {
+	color: #d3d3d3;
+	text-decoration: none;
+	font-size: 3rem;
+  	line-height: 5.5rem;
+	padding-right: 2.5rem;
+}
+
+.linkstyle:hover {
+  	color: white;
+}
+
+.logo {
+	float: left;
+	width: 100px;
+	vertical-align: middle;
+	padding-right: 2.5rem;
+}
+
+.fixed {
+  	position: fixed;
+  	width: 100%;
+  	z-index: 100000;
+}
+
+.menu {
+	display: none;
 }
 
 /*NAV*/
 
 /* STRUCTURE */
 
-body { 
+body {
   font-family: 'Open Sans', sans-serif;
   color: black;
   height: auto;
@@ -93,22 +119,26 @@ body {
 h2 {
 	line-height: 1;
 	margin: 0;
-	font-family: 'Hind Vadodara', sans-serif;	
-	font-size: 20pt;
+	font-family: 'Hind Vadodara', sans-serif;
+	font-size: 1.5rem;
 	text-transform: uppercase;
 	border: 0;
+	color: white;
 	border-bottom: 3px;
 	border-color: #BC00FF;
 	border-style: solid;
 	padding-bottom: 2px;
+	background-color: #222;
+	padding: 10px;
 }
 
 h3 {
 	line-height: 1;
 	margin: 0;
-	font-family: 'Hind Vadodara', sans-serif;	
-	font-size: 18pt;
+	font-family: 'Hind Vadodara', sans-serif;
+	font-size: 1rem;
 	font-weight: 400;
+	background-color: #222
 }
 
 p {
@@ -116,39 +146,32 @@ p {
 	font-size: 1em;
 }
 
-#pagewrap {
+.pagewrap {
 	padding: 0;
 	margin: 0;
-}
-#header {
-	display: block;
-	padding: 0;
-	width:100%;
-	border-color: black;
-	border-style: solid;
-	border-width: 0 0 1px 0;
-}
-#header div img {
-	overflow: hidden;
-	display: inline-block;
-	vertical-align: top;
-	float: right;
-	width: 7%;
-	transition-property: width;
-	transition-duration: 1s;
-	transition-timing-function: ease-in;
+  	overflow: hidden;
 }
 
-#content {
-	background: #FFF;
+.content {
 	display: block;
-	width: 100%;
+	width: 90%;
 	margin: 0 auto;
-	margin-top: : 5%;
 	padding: 0;
+  	padding-top: 119px;
+  	padding-bottom: 49px;
+  	position: relative;
+  	z-index: 1;
 }
 
-#top {
+.leaderboard {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  float: none;
+  padding: 0;
+}
+
+.top {
 	display: block;
 	margin: 0;
 	padding: 0;
@@ -156,81 +179,183 @@ p {
 	width: 100%;
 }
 
-#innerbox1 {
-	clear: both;
+.half {
 	float: left;
 	margin: 0;
 	display: block;
 	width: 45%;
 	padding: 2.5%;
-}
-#innerbox2 {
-	display: inline-block;
-	float: left;
-	width: 45%;
-	padding: 2.5%;
+	background-color: #fff;
 }
 
-#innerbox2 ul {
+.full {
+	float: left;
+	margin: 0;
+	display: block;
+	width: 100%;
+	padding: 2.5%;
+	padding-right: 20%;
+	padding-left: 20%;
+	background-color: #fff;
+}
+
+.half ul {
 	padding-left: 0;
 	color: #231F20;
+  	list-style: none;
 }
 
-#innerbox2 li {
+.half li {
 	display: block;
 	text-decoration: none;
 	color: #231F20;
 }
-#innerbox2 li a {
+.half li a {
 	display: block;
 	text-decoration: none;
 	color: #231F20;
 }
-#innerbox2 li:hover {
+.half li:hover {
 	text-decoration: underline;
 }
-#innerbox3 {
+
+.release {
+	display: inline-block;
+  	width: 30%;
+  	float: left;
+  	padding: 1.66%;
+  	margin: 0;
+}
+
+
+audio {
+	display: block;
+	clear: both;
+}
+
+.release img {
+	overflow: hidden;
+	padding: 5%;
+	margin: 0:;
+	margin-top: 0px;
+	background-color: #222;
+	width: 90%;
+}
+
+.releaseleft {
+	padding-left: 20px;
+}
+
+.release h2 {
+	border: none;
+	padding-bottom: 0;
+}
+
+.release h3 {
+	line-height: 1;
+	margin: 0 auto;
+	font-family: 'Hind Vadodara', sans-serif;
+	font-size: 1rem;
+	text-transform: uppercase;
+	border: 0;
+	color: white;
+	border-bottom: 3px;
+	border-color: #BC00FF;
+	border-style: solid;
+	padding-bottom: 2px;
+	padding: 10px;
+	background-color: #222
+}
+
+
+.artist {
+	display: inline-block;
+  	width: 30%;
+  	float: left;
+  	padding: 1.66%;
+  	margin: 0;
+}
+
+.artist img {
+	overflow: hidden;
+	padding: 5%;
+	margin: 0:;
+	margin-top: 0px;
+	background-color: #222;
+	width: 90%;
+}
+
+.artistleft {
+  padding-left: 20px;
+}
+
+.intro {
+	width: ;
+}
+
+.half img {
+	width: 50%;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+.north {
+  background-color: #fff;
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.south {
+  background-color: #fff;
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.full {
 	clear: both;
 	width: 95%;
 	margin-bottom: 2.5%;
 	padding: 2.5%;
 }
-#innerbox3 li {
+.full li {
 	text-decoration: none;
 	display: inline-block;
 	padding: 2.5%;
 }
-#innerbox3 ul {
+.full ul {
 	width: 100%;
 	margin: 2.5% auto;
 	text-align: center;
 	padding-left: 0;
 }
 
-#sidebar {
+.sidebar {
 	background: #FFF;
 }
-	header, #content, #middle, #sidebar {
+	#home, #releases, #artists, #events, #studio, #contact {
+		margin-top: 100px;
 }
 
-/*#content, #middle, #sidebar, footer {
-	border: solid 3px black;
-	margin-top: 2%;
-}*/
-
-#content, #middle, #sidebar, li {
+.content, .middle, .sidebar, li {
 	font-family: 'Glegoo', serif;
 }
 
 footer {
 	background-color: #333;
 	clear: both;
+  bottom: 0px;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  z-index: 15;
 	padding: 0;
 	margin: 0;
 }
 
 footer ul {
-	padding: 2%;
+	padding: 15px;
 	display: block;
 	margin: 0;
 }
@@ -258,7 +383,132 @@ footer li {
     transition-timing-function: linear;
 }
 
-/*
-	-webkit-box-shadow: 0 7px 6px -6px black;
-	-moz-box-shadow: 0 7px 6px -6px black;
-	box-shadow: 0 7px 6px -6px black;*/
+
+h2 {
+	font-size: 2.5rem;
+}
+
+.release h2 {
+	font-size: 1.5rem;
+}
+
+.artist h2 {
+	font-size: 1.5rem;
+}
+
+.hide {
+	display: none;
+}
+
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+@media screen and (max-device-width: 736px) {
+
+	nav {
+		height: auto;
+	}
+
+	.navlinks {
+		display: block;
+		float: none;
+		clear: both;
+		margin: 0 auto;
+		position: relative;
+		z-index: 15;
+		width: 100%;
+		font-family: 'Akzidenz Grotesk BE Md';
+		font-size: .25rem;
+		text-transform: lowercase;
+		text-align: center;
+		vertical-align: middle;
+		color: white;
+		padding: 0;
+		margin: 0 auto;
+	}	
+
+	.linkstyle {
+		color: white;
+		text-decoration: none;
+		font-size: 3rem;
+	  	line-height: 5.5rem;
+		padding-right: 2.5rem;
+	}
+
+
+	header {
+		height: auto;
+		z-index: 15;
+
+	}
+	.logo {
+		margin: 0 auto;
+		float: none;
+		width: 100px;
+		vertical-align: middle;
+	}
+	.half {
+	width: 100%;
+	margin: 0 auto;
+	float: none;
+	}
+
+	.south {
+		width: 100%;
+		margin: 0 auto;
+		float: none;
+	}
+	.release {
+		display: block;
+		width: 80%;
+		margin: 0 auto;
+		float: none;
+	}
+	.artist {
+		display: block;
+		width: 80%;
+		margin: 0 auto;
+		float: none;
+	}
+		footer{
+		float: none;
+	}
+		footer ul {
+			text-align: center;
+	}
+
+	.menu {
+		display: block;
+		z-index: 29;
+	}
+
+	.hamburger {
+		width: 10%;
+		display: block;
+		z-index: 30;
+		margin: 0 auto;
+		padding: 0;
+		padding-top: 15px;
+	}
+}
+
+
+	
+}
+
+
+@media screen and (min-width: 480px) {
+	
+}
