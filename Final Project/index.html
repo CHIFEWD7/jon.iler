@@ -1,59 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Concise - Home</title>
+	<title>Concise</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/media.css">
 	<link rel="stylesheet" type="text/css" href="css/animations.css">
+	<link rel="stylesheet" type="text/css" href="css/signupform.css"
 	<link rel="icon" type="image/png" href="images/favicon.png">
-	<link rel="stylesheet" href="css/responsive-nav.css">
-	<script src="scripts/responsive-nav.js"></script>
 </head>
 <body>
-<div id="pagewrap">
-<div id="header">
-			<a href="index.html"><img src="images/logo.png" class="slideRight"></a>
-			<a href="#nav" id="toggle" aria-hidden="false"><img src="images/menu.png" class="slideLeft"></a>
-		</div>
-		<nav class="nav-collapse">
-			<a href="#" class="floating">Releases<span style='color:#BC00FF;'>.</span></a>
-			<a href="#" class="floating">Artists<span style='color:#BC00FF;'>.</span></a>
-			<a href="#" class="floating">Events<span style='color:#BC00FF;'>.</span></a>
-			<a href="#" class="floating">Studio<span style='color:#BC00FF;'>.</span></a>
-			<a href="#" class="floating">Blog<span style='color:#BC00FF;'>.</span></a>
+<div class="pagewrap clearfix">
+	<header class="fixed slideDown clearfix">
+		<nav>
+			<a href="index.html" id="homenav"><img src="images/white.png" class="logo floating"></a>
+			<a href="#menu" id="menu" class="menu linkstyle"><img src="images/menu.png" class="hamburger"></a>
+			<li class="navlinks floating">
+			<a href="releases/index.html" id="releasesnav" class="menuitem linkstyle">Releases<span>.</span></a>
+			</li>
+			<li class="navlinks floating">
+			<a href="artists/index.html" id="artistsnav" class="menuitem linkstyle">Artists<span>.</span></a>
+			</li>
+			<li class="navlinks floating">
+			<a href="events/index.html" id="eventsnav" class="menuitem linkstyle">Events<span>.</span></a>
+			</li>
+			<li class="navlinks floating">
+			<a href="studio/index.html" id="studionav" class="menuitem linkstyle">Studio<span>.</span></a>
+			</li>
+			<li class="navlinks floating">
+			<a href="contact/index.html" id="contactnav" class="menuitem linkstyle">Contact<span>.</span></a>
+			</li>
 		</nav>
-	<div id="content">
-	<div id="top">
-		<div id="innerbox1">
-			<h2>Simply, Music.</h2>
-			<p>Concise is just a group of people that love good music, and a home for artists to express themselves. We pride ourselves on being more than just a label and taking the time to find and nurture new talent. We run a studio locally in Chicago and offer music production lessons to people who are passionate about creating music, and offer them a platform to share their music with the world. As a service to our artists, our entire talent roster is available to book through our site.</p> 
-			<p>Think of Concise less as a label, and more as an artist collective. Our primary interest is bringing the music we hear in our heads to the world. We'd like to share our creations with you. As we progress through our infancy in this big world of music, we hope to showcase everything from the dance floor friendly to the unrecognizeable.</p>
+	</header>
+	<div class="content">
+		<div id="home" class="north clearfix fadeIn">
+				<article class="half intro">
+					<h2>Simply, Music.</h2>
+					<p><span class="firstletter fadeIn">C</span>oncise is a group of people that love good music, and a home for artists to express themselves. We pride ourselves on being more than just a label and taking the time to find and nurture new talent. We run a studio locally in Chicago and offer music production lessons to people who are passionate about creating music, and offer them a platform to share their music with the world. As a service to our artists, our entire talent roster is available to book through our site.</p>
+					<p>Think of Concise less as a label, and more as an artist collective. Our primary interest is bringing the music we hear in our heads to the world. We'd like to share our creations with you. As we progress through our infancy in this big world of music, we hope to showcase everything from the dance floor friendly to the unrecognizeable.</p>
+				</article>
+				<article class="half">
+					<h2>Mailing List</h2>
+					<p>
+						Join our mailing list for <strong>free music</strong> and news about events.
+						<br>We don't do spam, promise!
+					</p>
+											<!-- Begin MailChimp Signup Form -->
+						<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+						<style type="text/css">
+							#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+						</style>
+						<div id="mc_embed_signup">
+						<form action="//concisemusic.us10.list-manage.com/subscribe/post?u=d6096ea2efd70503edffb436b&amp;id=d4be2e03da" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						    <div id="mc_embed_signup_scroll">
+						<div class="mc-field-group">
+							<input type="email" value="Email Address" size="30" name="EMAIL" class="required email" id="mce-EMAIL" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+						</div>
+						<div class="mc-field-group">
+							<input type="text" value="First Name" size="30" name="FNAME" class="firstname" id="mce-FNAME" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+						</div>
+						<div class="mc-field-group">
+							<input type="text" value="Last Name" size="30" name="LNAME" class="lastname" id="mce-LNAME" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+						</div>
+							<div id="mce-responses" class="clear">
+								<div class="response" id="mce-error-response" style="display:none"></div>
+								<div class="response" id="mce-success-response" style="display:none"></div>
+							</div>
+						    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d6096ea2efd70503edffb436b_d4be2e03da" tabindex="-1" value=""></div>
+						    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+						    </div>
+						</form>
+						</div>
+						<!--End mc_embed_signup-->
+				</article>
 		</div>
-		<div id="innerbox2">
-			<h2>News</h2>
-			<ul>
-				<li><a href="#"><h3>312 Audio Blog Post 1</h3></a></li>
-				<p>Post Description</p>
-				<li><a href="#"><h3>5 Magazine Blog Post 2</h3></a></li>
-				<p>Post Description</p>
-				<li><a href="#"><h3>Wunderground Blog Post 3</h3></a></li>
-				<p>Post Description</p>
-				<li><a href="#"><h3>Traxsource Blog Post 4</h3></a></li>
-				<p>Post Description</p>
-			</ul>
-		</div>
-	</div>
-		<div id="innerbox3">
-			<h2>Latest Releases</h2>
-			<ul>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-		</ul>
-		</div>
-	</div><!-- ===CONTENT=== -->
+	</div> <!-- ===CONTENT=== -->
 	<footer>
 			<ul>
 				<li><a href="#"><img src="images/socialicons/soundcloud.png"></a></li>
@@ -62,8 +83,10 @@
 				<li><a href="#"><img src="images/socialicons/instagram.png"></a></li>
 				<li><a href="#"><img src="images/socialicons/twitter.png"></a></li>
 			</ul>
+			<p><span class="copyright">&copy; 2016 Concise Music</span></p>
 	</footer>
-</div><!-- ===PAGEWRAP=== -->
-<script>var nav = responsiveNav(".nav-collapse", {customToggle: "#toggle"});</script>
+</div>	<!-- ===PAGEWRAP=== -->
+<!-- <script src="js/jquery-2.1.3.js" type="text/javascript" charset="utf-8" async defer></script>
+<script src="js/pages.js" type="text/javascript" charset="utf-8" async defer></script> -->
 </body>
 </html>

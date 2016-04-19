@@ -1,0 +1,64 @@
+#mc-embedded-subscribe-form {
+  background-color: #fff;
+  padding: 5%;
+  color: white;
+  text-align: center;
+}
+.mc-field-group {
+  padding: 2.5%;
+}
+
+.button {
+  margin-top: 5%;
+  padding: 2.5%;
+  background-color: black;
+  color: white;
+  border: none;
+  font-family: 'Hind Vadodara', sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 0px solid #000000;
+}
+
+.indicates-required {
+  text-align: left;
+}
+
+.email {
+  padding: 2.5%;
+  text-align: center;
+  border: none;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 1px solid black;
+  outline: none;
+  font-family: 'Glegoo', serif;
+}
+
+.firstname {
+  padding: 2.5%;
+  text-align: center;
+  border: none;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 1px solid black;
+  outline: none;
+  font-family: 'Glegoo', serif;
+}
+
+.lastname {
+  padding: 2.5%;
+  text-align: center;
+  border: none;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 1px solid black;
+  outline: none;
+  font-family: 'Glegoo', serif;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Concise</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/animations.css">
+	<link rel="stylesheet" type="text/css" href="../css/signupform.css"
+	<link rel="icon" type="image/png" href="../images/favicon.png">
+</head>
+<body>
+<div class="pagewrap clearfix">
+	<header class="fixed slideDown clearfix">
+		<nav>
+			<a href="../index.html" id="homenav"><img src="../images/white.png" class="logo floating"></a>
+			<a href="#menu" id="menu" class="menu linkstyle"><img src="../images/menu.png" class="hamburger"></a>
+			<li class="navlinks floating">
+			<a href="index.html" id="releasesnav" class="menuitem linkstyle">Releases<span>.</span></a>
+			</li>
+			<li class="navlinks floating">
+			<a href="../artists/index.html" id="artistsnav" class="menuitem linkstyle">Artists<span>.</span></a>
+			</li>
+			<li class="navlinks floating">
+			<a href="../events/index.html" id="eventsnav" class="menuitem linkstyle">Events<span>.</span></a>
+			</li>
+			<li class="navlinks floating">
+			<a href="../studio/index.html" id="studionav" class="menuitem linkstyle">Studio<span>.</span></a>
+			</li>
+			<li class="navlinks floating">
+			<a href="../contact/index.html" id="contactnav" class="menuitem linkstyle">Contact<span>.</span></a>
+			</li>
+		</nav>
+	</header>
+	<div class="content">
+		<div id="releases" class="south bighead clearfix fadeIn">
+			<h2>Releases</h2>
+			<div class="release featured">
+				<h2>Unit 6</h2>
+				<h3>Alejandro</h3>
+				<div class="player">
+					<img src="../images/releases/unit.jpg">
+					<audio src="../mp3/juicy.mp3" preload="no" />
+				</div>
+			</div>
+			<div class="release">
+				<h2>Californicated</h2>
+				<h3>Maxime F</h3>
+				<div class="player">
+					<img src="../images/releases/californicated.jpg">
+					<audio src="../mp3/juicy.mp3" preload="no" />
+				</div>
+			</div>
+			<div class="release">
+				<h2>Terrestrial</h2>
+				<h3>Joshua Gilliland</h3>
+				<div class="player">
+					<img src="../images/releases/terrestrial.jpg">
+					<audio src="../mp3/juicy.mp3" preload="no" />
+				</div>
+			</div>
+			<div class="release">
+				<h2>My Block</h2>
+				<h3>Hot Plate</h3>
+				<div class="player">
+					<img src="../images/releases/block.jpg">
+					<audio src="/mp3/juicy.mp3" preload="no" />
+				</div>
+			</div>
+			<div class="release">
+				<h2>Vibe</h2>
+				<h3>Radwyn</h3>
+				<div class="player">
+					<img src="../images/releases/vibe.jpg">
+					<audio src="../mp3/juicy.mp3" preload="no" />
+				</div>
+			</div>
+			<div class="release">
+				<h2>That Body</h2>
+				<h3>Jared Richard</h3>
+				<div class="player">
+					<img src="../images/releases/body.jpg">
+					<audio src="../mp3/juicy.mp3" preload="no" />
+				</div>
+			</div>
+			<div class="release">
+				<h2>Lost in Space</h2>
+				<h3>Jackin Andy</h3>
+				<div class="player">
+					<img src="../images/releases/lost.jpg">
+					<audio src="../mp3/juicy.mp3" preload="no" />
+				</div>
+			</div>
+		</div>
+	</div> <!-- ===CONTENT=== -->
+	<footer>
+			<ul>
+				<li><a href="#"><img src="../images/socialicons/soundcloud.png"></a></li>
+				<li><a href="#"><img src="../images/socialicons/facebook.png"></a></li>
+				<li><a href="#"><img src="../images/socialicons/youtube.png"></a></li>
+				<li><a href="#"><img src="../images/socialicons/instagram.png"></a></li>
+				<li><a href="#"><img src="../images/socialicons/twitter.png"></a></li>
+			</ul>
+			<p><span class="copyright">&copy; 2016 Concise Music</span></p>
+	</footer>
+</div>	<!-- ===PAGEWRAP=== -->
+<script src="../js/jquery-2.1.3.js" type="text/javascript" charset="utf-8" async defer></script>
+<script src="../js/audio.js"></script>
+<script>
+  audiojs.events.ready(function() {
+    var as = audiojs.createAll();
+  });
+</script>
+</body>
+</html>
